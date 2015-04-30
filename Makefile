@@ -1,5 +1,5 @@
 DOCKER_REPO?=registry.gocurb.internal:80
-CONTAINER=$(DOCKER_REPO)/curbformation-templates
+CONTAINER=$(DOCKER_REPO)/curbd-config
 
 all: build push clean
 
