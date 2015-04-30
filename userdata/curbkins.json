@@ -10,7 +10,8 @@
     "--link consul:consul \\",
     "-v /var/run/docker.sock:/var/run/docker.sock \\",
     "$DOCKER_REPO/$SERVICE_NAME:$VERSION",
-    "docker run -d --name nginx -e SERVICE_NAME=$SERVICE_NAME \\",
+    "docker run -d --restart=always --name nginx \\",
+    "-e SERVICE_NAME=$SERVICE_NAME \\",
     "--link $SERVICE_NAME:app --link logging:logging -p 8080:8080 \\",
     "--link consul:consul $DOCKER_REPO/nginx"
   ]
