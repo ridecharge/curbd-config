@@ -19,7 +19,7 @@
     "-e AWS_REGION=$AWS_REGION \\",
     "-e NR_TOKEN=$NR_TOKEN \\",
     "-e ENVIRONMENT=$ENVIRONMENT \\",
-    "--link logging:logging \\",
+    "--link consul:consul \\",
     "$DOCKER_REPO/$SERVICE_NAME:$VERSION",
     "docker run -d \\",
     "--restart=always \\",
