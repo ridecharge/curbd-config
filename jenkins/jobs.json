@@ -1,4 +1,8 @@
 {
+  "curbd-config-private-populate": {
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbd-config-private $key $config",
+    "parameters": "key,config"
+  },
   "curbd-config-private": {
     "cmd": "make",
     "repo": "ridecharge/curbd-config-private"
