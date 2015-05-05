@@ -1,6 +1,6 @@
 {
   "curbd-config-populate": {
-    "cmd": "docker run registry.gocurb.internal:80/curbd-config $key $config",
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbd-config $key $config",
     "parameters": "key,config"
   },
   "registry-docker": {
