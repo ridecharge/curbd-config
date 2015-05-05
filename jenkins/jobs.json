@@ -1,64 +1,82 @@
 {
-  "ridecharge": {
-    "registry-docker": {
-      "cmd": "make"
-    },
-    "packer-docker": {
-      "cmd": "make"
-    },
-    "curbd-config": {
-      "cmd": "make"
-    },
-    "curbd": {
-      "cmd": "make"
-    },
-    "curbformation": {
-      "cmd": "make"
-    },
-    "curbformation-templates": {
-      "cmd": "make"
-    },
-    "base-curbix": {
-      "cmd": "make"
-    },
-    "ntp-curbix": {
-      "cmd": "make"
-    },
-    "nat-curbix": {
-      "cmd": "make"
-    },
-    "cfversions": {
-      "cmd": "make"
-    },
-    "ansible-docker": {
-      "cmd": "make"
-    },
-    "nginx-docker": {
-      "cmd": "make"
-    },
-    "unicorn-docker": {
-      "cmd": "make"
-    },
-    "confd-docker": {
-      "cmd": "make"
-    },
-    "consul-docker": {
-      "cmd": "make"
-    },
-    "aws-startup-utils-docker": {
-      "cmd": "make"
-    },
-    "curbot-docker": {
-      "cmd": "make"
-    },
-    "jenkins-docker": {
-      "cmd": "make"
-    },
-    "logging-docker": {
-      "cmd": "make"
-    },
-    "statsd-docker": {
-      "cmd": "make"
-    }
+  "registry-docker": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "packer-docker": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "curbd-config": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "curbd": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "curbformation": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "curbformation-templates": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "base-curbix": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "ntp-curbix": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "nat-curbix": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "cfversions": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "ansible-docker": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "nginx-docker": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "unicorn-docker": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "confd-docker": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "consul-docker": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "aws-startup-utils-docker": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "curbot-docker": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "jenkins-docker": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "logging-docker": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
+  },
+  "statsd-docker": {
+    "cmd": "make",
+    "repo": "ridecharge/registry-docker"
   }
 }
