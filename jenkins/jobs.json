@@ -13,19 +13,19 @@
   },
   "curbd-config": {
     "cmd": "make",
-    "repo": "ridecharge/curbd-docker"
+    "repo": "ridecharge/curbd-config"
   },
   "curbd": {
     "cmd": "make",
-    "repo": "ridecharge/curbd-docker"
+    "repo": "ridecharge/curbd"
   },
   "curbformation": {
     "cmd": "make",
-    "repo": "ridecharge/curbformation-docker"
+    "repo": "ridecharge/curbformation"
   },
   "curbformation-templates": {
     "cmd": "make",
-    "repo": "ridecharge/curbformation-docker"
+    "repo": "ridecharge/curbformation-templates"
   },
   "base-curbix": {
     "cmd": "make",
@@ -65,7 +65,7 @@
   },
   "aws-startup-utils-docker": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/aws-startup-utils-docker"
   },
   "curbot-docker": {
     "cmd": "make",
