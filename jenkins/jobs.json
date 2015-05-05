@@ -1,7 +1,35 @@
 {
+  "curbd-config-private": {
+    "cmd": "make",
+    "repo": "ridecharge/curbd-config-private"
+  },
+  "curbformation-templates-private": {
+    "cmd": "make",
+    "repo": "ridecharge/curbformation-templates-private"
+  },
   "curbd-config-populate": {
     "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbd-config $key $config",
     "parameters": "key,config"
+  },
+  "curbformation-templates-deploy": {
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-tempates deploy -n $name -v $version -e $ENVIRONMENT",
+    "parameters": "name,version"
+  },
+  "curbformation-templates-redeploy": {
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-tempates redeploy -n $name -e $ENVIRONMENT",
+    "parameters": "name"
+  },
+  "curbformation-templates-rollback": {
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-tempates rollback -n $name -e $ENVIRONMENT",
+    "parameters": "name"
+  },
+  "curbformation-templates-lock": {
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-tempates lock -n $name -e $ENVIRONMENT",
+    "parameters": "name"
+  },
+  "curbformation-templates-unlock": {
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-tempates unlock -n $name -e $ENVIRONMENT",
+    "parameters": "name"
   },
   "registry-docker": {
     "cmd": "make",
