@@ -9,59 +9,59 @@
   },
   "packer-docker": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/packer-docker"
   },
   "curbd-config": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/curbd-docker"
   },
   "curbd": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/curbd-docker"
   },
   "curbformation": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/curbformation-docker"
   },
   "curbformation-templates": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/curbformation-docker"
   },
   "base-curbix": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/base-curbix"
   },
   "ntp-curbix": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/ntp-curbix"
   },
   "nat-curbix": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/nat-curbix"
   },
   "cfversions": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/cfversions"
   },
   "ansible-docker": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/ansible-docker"
   },
   "nginx-docker": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/nginx-docker"
   },
   "unicorn-docker": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/unicorn-docker"
   },
   "confd-docker": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/confd-docker"
   },
   "consul-docker": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/consul-docker"
   },
   "aws-startup-utils-docker": {
     "cmd": "make",
@@ -69,18 +69,18 @@
   },
   "curbot-docker": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/curbot-docker"
   },
   "jenkins-docker": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/jenkins-docker"
   },
   "logging-docker": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/logging-docker"
   },
   "statsd-docker": {
     "cmd": "make",
-    "repo": "ridecharge/registry-docker"
+    "repo": "ridecharge/statsd-docker"
   }
 }
