@@ -16,23 +16,23 @@
     "parameters": "key,config"
   },
   "curbformation-templates-deploy": {
-    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-tempates deploy -n $name -v $version -e $ENVIRONMENT",
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates deploy -n $name -v $version -e $ENVIRONMENT",
     "parameters": "name,version"
   },
   "curbformation-templates-redeploy": {
-    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-tempates redeploy -n $name -e $ENVIRONMENT",
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates redeploy -n $name -e $ENVIRONMENT",
     "parameters": "name"
   },
   "curbformation-templates-rollback": {
-    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-tempates rollback -n $name -e $ENVIRONMENT",
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates rollback -n $name -e $ENVIRONMENT",
     "parameters": "name"
   },
   "curbformation-templates-lock": {
-    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-tempates lock -n $name -e $ENVIRONMENT",
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates lock -n $name -e $ENVIRONMENT",
     "parameters": "name"
   },
   "curbformation-templates-unlock": {
-    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-tempates unlock -n $name -e $ENVIRONMENT",
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates unlock -n $name -e $ENVIRONMENT",
     "parameters": "name"
   },
   "registry-docker": {
