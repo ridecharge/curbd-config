@@ -10,7 +10,6 @@
     "-p 8301:8301/udp -p 8301:8301/tcp \\",
     "$DOCKER_REPO/consul:latest",
     "docker run \\",
-    "-e LOGGLY_TOKEN=$LOGGLY_TOKEN \\",
     "$DOCKER_REPO/aws-startup-utils ./attach_eni.py && \\",
     "sleep 10",
     "/root/config_network_interface.sh eth1"
