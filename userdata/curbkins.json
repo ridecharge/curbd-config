@@ -14,6 +14,7 @@
     "--log-driver=syslog \\",
     "--name $SERVICE_NAME \\",
     "--link consul:consul \\",
+    "-e ENVIRONMENT=$ENVIRONMENT \\",
     "-v /var/run/docker.sock:/var/run/docker.sock \\",
     "$DOCKER_REPO/$SERVICE_NAME:$VERSION",
     "docker run -d \\",

@@ -49,11 +49,13 @@
   },
   "curbd": {
     "cmd": "make",
-    "repo": "ridecharge/curbd"
+    "repo": "ridecharge/curbd",
+    "downstreams": "curbd-config,curbd-config-private"
   },
   "curbformation": {
     "cmd": "make",
-    "repo": "ridecharge/curbformation"
+    "repo": "ridecharge/curbformation",
+    "downstreams": "curbformation-templates,curbformation-templates-private"
   },
   "curbformation-templates": {
     "cmd": "make",
@@ -77,7 +79,8 @@
   },
   "ansible-docker": {
     "cmd": "make",
-    "repo": "ridecharge/ansible-docker"
+    "repo": "ridecharge/ansible-docker",
+    "downstreams": "aws-startup-utils-docker,consul-docker,jenkins-docker"
   },
   "nginx-docker": {
     "cmd": "make",
@@ -89,7 +92,8 @@
   },
   "confd-docker": {
     "cmd": "make",
-    "repo": "ridecharge/confd-docker"
+    "repo": "ridecharge/confd-docker",
+    "downstreams": "nginx-docker,unicorn-docker"
   },
   "consul-docker": {
     "cmd": "make",
