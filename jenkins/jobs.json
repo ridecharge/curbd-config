@@ -1,4 +1,39 @@
 {
+  "base-ansible-role": {
+    "repo": "ridecharge/base-ansible-role",
+    "cmd": "",
+    "downstreams": "base-curbix"
+  },
+  "java-ansible-role": {
+    "repo": "ridecharge/java-ansible-role",
+    "cmd": "",
+    "downstreams": "jenkins-docker"
+  },
+  "jenkins-ansible-role": {
+    "repo": "ridecharge/jenkins-ansible-role",
+    "cmd": "",
+    "downstreams": "jenkins-docker"
+  },
+  "python3-ansible-role": {
+    "repo": "ridecharge/python3-ansible-role",
+    "cmd": "",
+    "downstreams": "jenkins-docker,aws-startup-utils-docker,consul-docker,curbd-config,curbformation-templates,curbd-config-private,curbformation-templates-private"
+  },
+  "logging-ansible-role": {
+    "repo": "ridecharge/logging-ansible-role",
+    "cmd": "",
+    "downstreams": "logging-docker"
+  },
+  "ntp-ansible-role": {
+    "repo": "ridecharge/ntp-ansible-role",
+    "cmd": "",
+    "downstreams": "ntp-curbix"
+  },
+  "nat-ansible-role": {
+    "repo": "ridecharge/nat-ansible-role",
+    "cmd": "",
+    "downstreams": "nat-curbix"
+  },
   "curbd-config-private-populate": {
     "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbd-config-private $key $config",
     "parameters": "key,config"
