@@ -17,7 +17,7 @@
   "python3-ansible-role": {
     "repo": "ridecharge/python3-ansible-role",
     "cmd": "true",
-    "downstreams": "jenkins-docker,aws-startup-utils-docker,consul-docker,curbd-config,curbformation-templates,curbd-config-private,curbformation-templates-private"
+    "downstreams": "jenkins-docker,aws-startup-utils-docker,consul-docker,curbd,curbformation"
   },
   "logging-ansible-role": {
     "repo": "ridecharge/logging-ansible-role",
