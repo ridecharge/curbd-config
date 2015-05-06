@@ -1,37 +1,37 @@
 {
   "base-ansible-role": {
     "repo": "ridecharge/base-ansible-role",
-    "cmd": "",
+    "cmd": "true",
     "downstreams": "base-curbix"
   },
   "java-ansible-role": {
     "repo": "ridecharge/java-ansible-role",
-    "cmd": "",
+    "cmd": "true",
     "downstreams": "jenkins-docker"
   },
   "jenkins-ansible-role": {
     "repo": "ridecharge/jenkins-ansible-role",
-    "cmd": "",
+    "cmd": "true",
     "downstreams": "jenkins-docker"
   },
   "python3-ansible-role": {
     "repo": "ridecharge/python3-ansible-role",
-    "cmd": "",
+    "cmd": "true",
     "downstreams": "jenkins-docker,aws-startup-utils-docker,consul-docker,curbd-config,curbformation-templates,curbd-config-private,curbformation-templates-private"
   },
   "logging-ansible-role": {
     "repo": "ridecharge/logging-ansible-role",
-    "cmd": "",
+    "cmd": "true",
     "downstreams": "logging-docker"
   },
   "ntp-ansible-role": {
     "repo": "ridecharge/ntp-ansible-role",
-    "cmd": "",
+    "cmd": "true",
     "downstreams": "ntp-curbix"
   },
   "nat-ansible-role": {
     "repo": "ridecharge/nat-ansible-role",
-    "cmd": "",
+    "cmd": "true",
     "downstreams": "nat-curbix"
   },
   "curbd-config-private-populate": {
