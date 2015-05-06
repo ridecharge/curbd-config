@@ -98,8 +98,7 @@
   },
   "base-curbix": {
     "cmd": "make",
-    "repo": "ridecharge/base-curbix",
-    "downstreams": "ntp-curbix,nat-curbix"
+    "repo": "ridecharge/base-curbix"
   },
   "ntp-curbix": {
     "cmd": "make",
