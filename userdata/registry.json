@@ -19,7 +19,17 @@
     "-e AWS_REGION=$AWS_REGION \\",
     "-e NR_TOKEN=$NR_TOKEN \\",
     "-e ENVIRONMENT=$ENVIRONMENT \\",
-    "--link consul:consul -p 8080:5000 \\",
-    "$DOCKER_REPO/$SERVICE_NAME:$VERSION"
+    "--link consul:consul \\",
+    "$DOCKER_REPO/$SERVICE_NAME:$VERSION",
+    "docker run -d \\",
+    "--restart=always \\",
+    "--name nginx \\",
+    "--log-driver=syslog \\",
+    "-e SERVICE_NAME=$SERVICE_NAME \\",
+    "--link $SERVICE_NAME:app \\",
+    "--link logging:logging \\",
+    "--link consul:consul \\",
+    "-p 8080:8080 \\",
+    "$DOCKER_REPO/nginx:latest"
   ]
 }
