@@ -43,7 +43,8 @@
   },
   "curbd-config-private-populate": {
     "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbd-config-private $key $config",
-    "parameters": "key,config"
+    "parameters": "key,config",
+    "blockOn": "curbd-config-private"
   },
   "curbd-config-private": {
     "cmd": "make",
@@ -57,27 +58,33 @@
   },
   "curbd-config-populate": {
     "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbd-config $key $config",
-    "parameters": "key,config"
+    "parameters": "key,config",
+    "blockOn": "curbd-config"
   },
   "curbformation-templates-deploy": {
     "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates deploy -n $name -v $version -e $ENVIRONMENT",
-    "parameters": "name,version"
+    "parameters": "name,version",
+    "blockOn": "curbformation-templates"
   },
   "curbformation-templates-redeploy": {
     "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates redeploy -n $name -e $ENVIRONMENT",
-    "parameters": "name"
+    "parameters": "name",
+    "blockOn": "curbformation-templates"
   },
   "curbformation-templates-rollback": {
     "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates rollback -n $name -e $ENVIRONMENT",
-    "parameters": "name"
+    "parameters": "name",
+    "blockOn": "curbformation-templates"
   },
   "curbformation-templates-lock": {
     "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates lock -n $name -e $ENVIRONMENT",
-    "parameters": "name"
+    "parameters": "name",
+    "blockOn": "curbformation-templates"
   },
   "curbformation-templates-unlock": {
     "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates unlock -n $name -e $ENVIRONMENT",
-    "parameters": "name"
+    "parameters": "name",
+    "blockOn": "curbformation-templates"
   },
   "registry-docker": {
     "cmd": "make",
