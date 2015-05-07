@@ -44,9 +44,9 @@
   "curbd-config-private-populate": {
     "blockOn": "curbd-config-private",
     "cmd": [
-      "for configs in $(git --no-pager log --name-status --pretty=format: | sort |uniq| egrep '[M|A].*$ENVIRONMENT.*json$' | cut -f2-3 -d/|cut -f1 -d.);  do",
-      " key=$(echo $configs|cut -f1 -d/)",
-      " config=$(echo $configs|cut -f2 -d/) ",
+      "for file in $(git --no-pager log --name-status --pretty=format: | sort |uniq| egrep \"[M|A].*$ENVIRONMENT.*json$\" | cut -f2-3 -d/|cut -f1 -d.);  do",
+      " key=$(echo $file|cut -f1 -d/)",
+      " config=$(echo $file|cut -f2 -d/) ",
       " docker run --link consul:consul registry.gocurb.internal:80/curbd-config $key $config",
       "done"
     ],
@@ -67,9 +67,9 @@
   },
   "curbd-config-populate": {
     "cmd": [
-      "for configs in $(git --no-pager log --name-status --pretty=format: | sort |uniq| egrep '[M|A].*$ENVIRONMENT.*json$' | cut -f2-3 -d/|cut -f1 -d.);  do",
-      " key=$(echo $configs|cut -f1 -d/)",
-      " config=$(echo $configs|cut -f2 -d/) ",
+      "for files in $(git --no-pager log --name-status --pretty=format: | sort |uniq| egrep \"[M|A].*$ENVIRONMENT.*json$\" | cut -f2-3 -d/|cut -f1 -d.);  do",
+      " key=$(echo $files|cut -f1 -d/)",
+      " config=$(echo $files|cut -f2 -d/) ",
       " docker run --link consul:consul registry.gocurb.internal:80/curbd-config $key $config",
       "done"
     ],
