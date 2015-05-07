@@ -57,7 +57,8 @@
   "curbd-config-private": {
     "cmd": "make",
     "repo": "ridecharge/curbd-config-private",
-    "branch": "master"
+    "branch": "master",
+    "downstreams": "curbd-config-private-populate"
   },
   "curbformation-templates-private": {
     "cmd": "make",
