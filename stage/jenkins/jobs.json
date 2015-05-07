@@ -9,19 +9,19 @@
     "repo": "ridecharge/java-ansible-role",
     "branch": "master",
     "cmd": "true",
-    "downstreams": "jenkins-docker"
+    "downstreams": "curbkins-docker"
   },
-  "jenkins-ansible-role": {
-    "repo": "ridecharge/jenkins-ansible-role",
+  "curbkins-ansible-role": {
+    "repo": "ridecharge/curbkins-ansible-role",
     "branch": "master",
     "cmd": "true",
-    "downstreams": "jenkins-docker"
+    "downstreams": "curbkins-docker"
   },
   "python3-ansible-role": {
     "repo": "ridecharge/python3-ansible-role",
     "branch": "master",
     "cmd": "true",
-    "downstreams": "jenkins-docker,aws-startup-utils-docker,consul-docker,curbd,curbformation"
+    "downstreams": "curbkins-docker,aws-startup-utils-docker,consul-docker,curbd,curbformation"
   },
   "logging-ansible-role": {
     "repo": "ridecharge/logging-ansible-role",
@@ -141,7 +141,7 @@
     "cmd": "make",
     "repo": "ridecharge/ansible-docker",
     "branch": "master",
-    "downstreams": "aws-startup-utils-docker,consul-docker,jenkins-docker"
+    "downstreams": "aws-startup-utils-docker,consul-docker,curbkins-docker"
   },
   "nginx-docker": {
     "cmd": "make",
@@ -174,9 +174,9 @@
     "repo": "ridecharge/curbot-docker",
     "branch": "master"
   },
-  "jenkins-docker": {
+  "curbkins-docker": {
     "cmd": "make",
-    "repo": "ridecharge/jenkins-docker",
+    "repo": "ridecharge/curbkins-docker",
     "branch": "master"
   },
   "logging-docker": {
