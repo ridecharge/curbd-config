@@ -58,12 +58,14 @@
   },
   "curbd-config-populate": {
     "cmd": [
-      "for configs in $(git --no-pager log --name-status --pretty=format: master | sort |uniq| egrep 'M.*stage.*json$' | cut -f2-3 -d/|cut -f1 -d.);  do",
+      "for configs in $(git --no-pager log --name-status --pretty=format: | sort |uniq| egrep 'M.*stage.*json$' | cut -f2-3 -d/|cut -f1 -d.);  do",
       " key=$(echo $configs|cut -f1 -d/)",
       " config=$(echo $configs|cut -f2 -d/) ",
       " docker run --link consul:consul registry.gocurb.internal:80/curbd-config $key $config",
       "done"
     ],
+    "repo": "ridecharge/curbd-config",
+    "branch": "master",
     "blockOn": "curbd-config"
   },
   "curbformation-templates-deploy": {
