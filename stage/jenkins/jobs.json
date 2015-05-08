@@ -42,17 +42,15 @@
     "downstreams": "nat-curbix"
   },
   "curbd-config-private-populate": {
-    "blockOn": "curbd-config-private",
     "cmd": [
-      "for file in $(git --no-pager log --name-status --pretty=format: | sort |uniq| egrep \"[M|A].*$ENVIRONMENT.*json$\" | cut -f2-3 -d/|cut -f1 -d.);  do",
+      "for files in $(find $ENVIRONMENT/* | egrep \"$ENVIRONMENT/.*\\.json\" | cut -f2-3 -d/|cut -f1 -d.); do",
       " key=$(echo $file|cut -f1 -d/)",
       " config=$(echo $file|cut -f2 -d/) ",
       " docker run --link consul:consul registry.gocurb.internal:80/curbd-config $key $config",
       "done"
     ],
     "repo": "ridecharge/curbd-config-private",
-    "branch": "master",
-    "blockOn": "curbd-config-private"
+    "branch": "master"
   },
   "curbd-config-private": {
     "cmd": "make",
@@ -67,15 +65,14 @@
   },
   "curbd-config-populate": {
     "cmd": [
-      "for files in $(git --no-pager log --name-status --pretty=format: | sort |uniq| egrep \"[M|A].*$ENVIRONMENT.*json$\" | cut -f2-3 -d/|cut -f1 -d.);  do",
+      "for files in $(find $ENVIRONMENT/* | egrep \"$ENVIRONMENT/.*\\.json\" | cut -f2-3 -d/|cut -f1 -d.); do",
       " key=$(echo $files|cut -f1 -d/)",
       " config=$(echo $files|cut -f2 -d/) ",
       " docker run --link consul:consul registry.gocurb.internal:80/curbd-config $key $config",
       "done"
     ],
     "repo": "ridecharge/curbd-config",
-    "branch": "master",
-    "blockOn": "curbd-config"
+    "branch": "master"
   },
   "curbformation-templates-deploy": {
     "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates deploy -n $name -v $version -e $ENVIRONMENT",
