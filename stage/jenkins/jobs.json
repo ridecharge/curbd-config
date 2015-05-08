@@ -44,9 +44,9 @@
   "curbd-config-private-populate": {
     "cmd": [
       "for files in $(find $ENVIRONMENT/* | egrep \"$ENVIRONMENT/.*\\.json\" | cut -f2-3 -d/|cut -f1 -d.); do",
-      " key=$(echo $file|cut -f1 -d/)",
-      " config=$(echo $file|cut -f2 -d/) ",
-      " docker run --link consul:consul registry.gocurb.internal:80/curbd-config $key $config",
+      " key=$(echo $files|cut -f1 -d/)",
+      " config=$(echo $files|cut -f2 -d/) ",
+      " docker run --link consul:consul registry.gocurb.internal:80/curbd-config-private $key $config",
       "done"
     ],
     "repo": "ridecharge/curbd-config-private",
