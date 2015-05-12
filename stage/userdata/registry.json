@@ -20,7 +20,7 @@
     "-e NR_TOKEN=$NR_TOKEN \\",
     "-e ENVIRONMENT=$ENVIRONMENT \\",
     "--link consul:consul \\",
-    "$DOCKER_REPO/$SERVICE_NAME:$VERSION",
+    "ridecharge/$SERVICE_NAME:$VERSION",
     "docker run -d \\",
     "--restart=always \\",
     "--name nginx \\",
