@@ -117,6 +117,7 @@
   },
   "curbd": {
     "cmd": "make",
+    "branch": "master",
     "repo": "ridecharge/curbd",
     "downstreams": "curbd-config,curbd-config-private"
   },
