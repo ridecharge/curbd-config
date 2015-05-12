@@ -11,12 +11,6 @@
     "cmd": "true",
     "downstreams": "jenkins-docker"
   },
-  "curbkins-ansible-role": {
-    "repo": "ridecharge/curbkins-ansible-role",
-    "branch": "master",
-    "cmd": "true",
-    "downstreams": "curbkins-docker"
-  },
   "jenkins-ansible-role": {
     "repo": "ridecharge/jenkins-ansible-role",
     "branch": "master",
@@ -194,16 +188,16 @@
     "repo": "ridecharge/curbot-docker",
     "branch": "master"
   },
-  "curbkins-docker": {
+  "curbkins": {
     "cmd": "make",
-    "repo": "ridecharge/curbkins-docker",
+    "repo": "ridecharge/curbkins",
     "branch": "master"
   },
   "jenkins-docker": {
     "cmd": "make",
     "repo": "ridecharge/jenkins-docker",
     "branch": "master",
-    "downstreams": "curbkins-docker"
+    "downstreams": "curbkins"
   },
   "logging-docker": {
     "cmd": "make",
