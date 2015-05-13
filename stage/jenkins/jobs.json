@@ -53,13 +53,13 @@
     "branch": "master"
   },
   "curbd-config-private": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/curbd-config-private",
     "branch": "master",
     "downstreams": "curbd-config-private-populate"
   },
   "curbformation-templates-private": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/curbformation-templates-private",
     "branch": "master"
   },
@@ -100,118 +100,118 @@
     "blockOn": "curbformation-templates"
   },
   "registry-docker": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/registry-docker",
     "branch": "master"
   },
   "packer-docker": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/packer-docker",
     "branch": "master"
   },
   "curbd-config": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/curbd-config",
     "branch": "master",
     "downstreams": "curbd-config-populate"
   },
   "curbd": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "branch": "master",
     "repo": "ridecharge/curbd",
     "downstreams": "curbd-config,curbd-config-private"
   },
   "curbformation": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/curbformation",
     "branch": "master",
     "downstreams": "curbformation-templates,curbformation-templates-private"
   },
   "curbformation-templates": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/curbformation-templates",
     "branch": "master"
   },
   "base-curbix": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/base-curbix",
     "branch": "master"
   },
   "ntp-curbix": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/ntp-curbix",
     "branch": "master"
   },
   "nat-curbix": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/nat-curbix",
     "branch": "master"
   },
   "cfversions": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/cfversions",
     "branch": "master"
   },
   "ansible-docker": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/ansible-docker",
     "branch": "master",
     "downstreams": "aws-startup-utils-docker,consul-docker,jenkins-docker"
   },
   "nginx-docker": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/nginx-docker",
     "branch": "master"
   },
   "unicorn-docker": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/unicorn-docker",
     "branch": "master"
   },
   "confd-docker": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/confd-docker",
     "branch": "master",
     "downstreams": "nginx-docker,unicorn-docker"
   },
   "consul-docker": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/consul-docker",
     "branch": "master"
   },
   "aws-startup-utils-docker": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/aws-startup-utils-docker",
     "branch": "master"
   },
   "curbot-docker": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/curbot-docker",
     "branch": "master"
   },
   "curbkins": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/curbkins",
     "branch": "master"
   },
   "jenkins-docker": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/jenkins-docker",
     "branch": "master",
     "downstreams": "curbkins"
   },  
   "jenkins-slave-curbix": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/jenkins-slave-curbix",
     "branch": "master"
   },
   "logging-docker": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/logging-docker",
     "branch": "master"
   },
   "statsd-docker": {
-    "cmd": "make",
+    "cmd": "sudo make",
     "repo": "ridecharge/statsd-docker",
     "branch": "master"
   }
