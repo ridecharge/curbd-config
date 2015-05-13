@@ -198,11 +198,11 @@
     "cmd": "make",
     "repo": "ridecharge/jenkins-docker",
     "branch": "master",
-    "downstreams": "curbkins,jenkins-slave-docker"
+    "downstreams": "curbkins"
   },  
-  "jenkins-slave-docker": {
+  "jenkins-slave-curbix": {
     "cmd": "make",
-    "repo": "ridecharge/jenkins-slave-docker",
+    "repo": "ridecharge/jenkins-slave-curbix",
     "branch": "master"
   },
   "logging-docker": {
