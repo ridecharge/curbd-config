@@ -43,10 +43,12 @@
   },
   "curbd-config-private-populate": {
     "cmd": [
+      "ENVIRONMENT=$(curl http://consul.gocurb.internal/v1/kv/cf/config/environment?raw)",
+      "cd /var/lib/jenkins/workspace/curbd-config-private-populate",
       "for files in $(find $ENVIRONMENT/* | egrep \"$ENVIRONMENT/.*\\.json\" | cut -f2-3 -d/|cut -f1 -d.); do",
-      " key=$(echo $files|cut -f1 -d/)",
-      " config=$(echo $files|cut -f2 -d/) ",
-      " docker run --link consul:consul registry.gocurb.internal:80/curbd-config-private $key $config",
+      "  key=$(echo $files|cut -f1 -d/)",
+      "  config=$(echo $files|cut -f2 -d/) ",
+      "  docker run --link consul:consul registry.gocurb.internal:80/curbd-config-private $key $config",
       "done"
     ],
     "repo": "ridecharge/curbd-config-private",
@@ -65,10 +67,12 @@
   },
   "curbd-config-populate": {
     "cmd": [
+      "ENVIRONMENT=$(curl http://consul.gocurb.internal/v1/kv/cf/config/environment?raw)",
+      "cd /var/lib/jenkins/workspace/curbd-config-populate",
       "for files in $(find $ENVIRONMENT/* | egrep \"$ENVIRONMENT/.*\\.json\" | cut -f2-3 -d/|cut -f1 -d.); do",
-      " key=$(echo $files|cut -f1 -d/)",
-      " config=$(echo $files|cut -f2 -d/) ",
-      " docker run --link consul:consul registry.gocurb.internal:80/curbd-config $key $config",
+      "  key=$(echo $files|cut -f1 -d/)",
+      "  config=$(echo $files|cut -f2 -d/) ",
+      "  docker run --link consul:consul registry.gocurb.internal:80/curbd-config $key $config",
       "done"
     ],
     "repo": "ridecharge/curbd-config",
@@ -199,7 +203,7 @@
     "repo": "ridecharge/jenkins-docker",
     "branch": "master",
     "downstreams": "curbkins"
-  },  
+  },
   "jenkins-slave-curbix": {
     "cmd": "make",
     "repo": "ridecharge/jenkins-slave-curbix",
