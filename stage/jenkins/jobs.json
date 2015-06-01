@@ -78,6 +78,11 @@
     "repo": "ridecharge/curbd-config",
     "branch": "master"
   },
+  "curbformation-templates-create": {
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates create -n $name -v $version",
+    "parameters": "name,version",
+    "blockOn": "curbformation-templates"
+  },
   "curbformation-templates-deploy": {
     "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates deploy -n $name -v $version",
     "parameters": "name,version",
