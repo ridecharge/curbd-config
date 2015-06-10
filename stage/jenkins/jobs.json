@@ -89,12 +89,17 @@
     "blockOn": "curbformation-templates"
   },
   "curbformation-templates-redeploy": {
-    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates redeploy -n $name",
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates deploy -n $name",
     "parameters": "name",
     "blockOn": "curbformation-templates"
   },
   "curbformation-templates-rollback": {
-    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates rollback -n $name",
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates deploy -n $name --rollback",
+    "parameters": "name",
+    "blockOn": "curbformation-templates"
+  },
+  "curbformation-templates-commit": {
+    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates deploy -n $name --commit",
     "parameters": "name",
     "blockOn": "curbformation-templates"
   },
@@ -139,6 +144,11 @@
   "curbformation-templates": {
     "cmd": "make",
     "repo": "ridecharge/curbformation-templates",
+    "branch": "master"
+  },
+  "curbformation-templates-shared": {
+    "cmd": "make",
+    "repo": "ridecharge/curbformation-templates-shared",
     "branch": "master"
   },
   "base-curbix": {
