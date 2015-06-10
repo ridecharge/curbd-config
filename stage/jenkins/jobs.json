@@ -149,7 +149,8 @@
   "curbformation-templates-shared": {
     "cmd": "make",
     "repo": "ridecharge/curbformation-templates-shared",
-    "branch": "master"
+    "branch": "master",
+    "downstreams": "curbformation-templates-private,curbformation-templates"
   },
   "base-curbix": {
     "cmd": "make",
