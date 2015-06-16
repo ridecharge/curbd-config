@@ -5,6 +5,11 @@
     "cmd": "true",
     "downstreams": "base-curbix"
   },
+  "curbkins-docker": {
+    "repo": "ridecharge/curbkins-docker",
+    "branch": "master",
+    "cmd": "make"
+  },
   "java-ansible-role": {
     "repo": "ridecharge/java-ansible-role",
     "branch": "master",
@@ -196,7 +201,7 @@
     "branch": "master"
   },
   "curbkins": {
-    "cmd": "make",
+    "cmd": "gradle test",
     "repo": "ridecharge/curbkins",
     "branch": "master"
   },
