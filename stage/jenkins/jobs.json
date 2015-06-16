@@ -209,7 +209,7 @@
     "cmd": "make",
     "repo": "ridecharge/jenkins-docker",
     "branch": "master",
-    "downstreams": "curbkins"
+    "downstreams": "curbkins-docker"
   },
   "jenkins-slave-curbix": {
     "cmd": "make",
