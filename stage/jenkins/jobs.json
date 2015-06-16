@@ -201,7 +201,7 @@
     "branch": "master"
   },
   "curbkins": {
-    "cmd": "gradle test",
+    "cmd": "make",
     "repo": "ridecharge/curbkins",
     "branch": "master"
   },
