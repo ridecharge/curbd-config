@@ -5,7 +5,7 @@
     "regex": ".+-jobs$"
   },
   "view-configuration-jobs": {
-    "name": "Bootstrap Configuration Jobs",
+    "name": "View Configuration Jobs",
     "description": "These bootstrap jenkins and create the initial job templates.",
     "regex": "^generate-.+-views$"
   },
