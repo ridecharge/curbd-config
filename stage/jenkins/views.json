@@ -17,7 +17,7 @@
   "curbformation-deploy-jobs": {
     "name": "Curbformation Deploy Jobs",
     "description": "These jobs manage cloudformation deployments.",
-    "regex": "^curbformation-templates-.+$"
+    "regex": "^curbformation-templates-.+-.+$"
   },
   "curbd-populate-jobs": {
     "name": "Curbd Populate Jobs",
