@@ -1,30 +1,37 @@
 {
-  "Bootstrap Configuration Jobs": {
+  "bootstrap-configuration-jobs": {
+    "name": "Bootstrap Configuration Jobs",
     "description": "These bootstrap jenkins and create the initial job templates.",
     "regex": ".+-jobs$"
   },
-  "Jenkins Configuration Jobs": {
+  "jenkins-configuration-jobs": {
+    "name": "Jenkins Configuration Jobs",
     "description": "These jobs configure the jenkins instance.",
     "regex": "^jenkins-.+-config$"
   },
-  "Curbformation Deploy Jobs": {
-    "description": "Jobs that deploy apps via cloudformation.",
+  "curbformation-deploy-jobs": {
+    "name": "Curbformation Deploy Jobs",
+    "description": "These jobs manage cloudformation deployments.",
     "regex": "^curbformation-templates-.+$"
   },
-  "Curbd Deploy Jobs": {
-    "description": "Jobs that configuration to consul.",
+  "curbd-populate-jobs": {
+    "name": "Curbd Populate Jobs",
+    "description": "These jobs manage configuration in consul.",
     "regex": "^curbd-.+-populate$"
   },
-  "Docker Containers": {
-    "description": "Jobs that configuration to consul.",
+  "docker-containers": {
+    "name": "Docker Containers",
+    "description": "Docker container build jobs.",
     "regex": "^.+-docker$"
   },
-  "Amazon Machine Images": {
-    "description": "Jobs that configuration to consul.",
+  "amazon-machine-images": {
+    "name": "Amazon Machine Images",
+    "description": "AMI build jobs.",
     "regex": "^.+-curbix$"
   },
-  "Ansible Roles": {
-    "description": "Jobs that configuration to consul.",
+  "ansible-roles": {
+    "name": "Ansible Roles",
+    "description": "Ansible Roles for provisioning.",
     "regex": "^.+-ansible-role$"
   }
 }
