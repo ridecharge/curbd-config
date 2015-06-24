@@ -10,6 +10,11 @@
     "branch": "master",
     "cmd": "make"
   },
+  "android-docker": {
+    "repo": "ridecharge/android-docker",
+    "branch": "master",
+    "cmd": "make"
+  },
   "java-ansible-role": {
     "repo": "ridecharge/java-ansible-role",
     "branch": "master",
