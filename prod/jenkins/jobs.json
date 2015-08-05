@@ -5,16 +5,6 @@
     "cmd": "true",
     "downstreams": "base-curbix"
   },
-  "curbkins-docker": {
-    "repo": "ridecharge/curbkins-docker",
-    "branch": "master",
-    "cmd": "make"
-  },
-  "android-docker": {
-    "repo": "ridecharge/android-docker",
-    "branch": "master",
-    "cmd": "make"
-  },
   "java-ansible-role": {
     "repo": "ridecharge/java-ansible-role",
     "branch": "master",
@@ -57,17 +47,6 @@
       "docker run --link consul:consul registry.gocurb.internal:80/curbd-config-private -e $ENVIRONMENT"
     ]
   },
-  "curbd-config-private": {
-    "cmd": "make",
-    "repo": "ridecharge/curbd-config-private",
-    "branch": "master",
-    "downstreams": "curbd-config-private-populate"
-  },
-  "curbformation-templates-private": {
-    "cmd": "make",
-    "repo": "ridecharge/curbformation-templates-private",
-    "branch": "master"
-  },
   "curbd-config-populate": {
     "cmd": [
       "ENVIRONMENT=$(curl http://consul.gocurb.internal/v1/kv/cf/config/environment?raw)",
@@ -108,127 +87,5 @@
     "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates unlock -n $name",
     "parameters": "name",
     "blockOn": "curbformation-templates"
-  },
-  "registry-docker": {
-    "cmd": "make",
-    "repo": "ridecharge/registry-docker",
-    "branch": "master"
-  },
-  "packer-docker": {
-    "cmd": "make",
-    "repo": "ridecharge/packer-docker",
-    "branch": "master"
-  },
-  "curbd-config": {
-    "cmd": "make",
-    "repo": "ridecharge/curbd-config",
-    "branch": "master",
-    "downstreams": "curbd-config-populate"
-  },
-  "curbd": {
-    "cmd": "make",
-    "branch": "master",
-    "repo": "ridecharge/curbd",
-    "downstreams": "curbd-config,curbd-config-private"
-  },
-  "curbformation": {
-    "cmd": "make",
-    "repo": "ridecharge/curbformation",
-    "branch": "master",
-    "downstreams": "curbformation-templates,curbformation-templates-private"
-  },
-  "curbformation-templates": {
-    "cmd": "make",
-    "repo": "ridecharge/curbformation-templates",
-    "branch": "master"
-  },
-  "curbformation-templates-shared": {
-    "cmd": "make",
-    "repo": "ridecharge/curbformation-templates-shared",
-    "branch": "master",
-    "downstreams": "curbformation-templates-private,curbformation-templates"
-  },
-  "base-curbix": {
-    "cmd": "make",
-    "repo": "ridecharge/base-curbix",
-    "branch": "master"
-  },
-  "ntp-curbix": {
-    "cmd": "make",
-    "repo": "ridecharge/ntp-curbix",
-    "branch": "master"
-  },
-  "nat-curbix": {
-    "cmd": "make",
-    "repo": "ridecharge/nat-curbix",
-    "branch": "master"
-  },
-  "cfversions": {
-    "cmd": "make",
-    "repo": "ridecharge/cfversions",
-    "branch": "master"
-  },
-  "ansible-docker": {
-    "cmd": "make",
-    "repo": "ridecharge/ansible-docker",
-    "branch": "master",
-    "downstreams": "aws-startup-utils-docker,consul-docker,jenkins-docker"
-  },
-  "nginx-docker": {
-    "cmd": "make",
-    "repo": "ridecharge/nginx-docker",
-    "branch": "master"
-  },
-  "unicorn-docker": {
-    "cmd": "make",
-    "repo": "ridecharge/unicorn-docker",
-    "branch": "master"
-  },
-  "confd-docker": {
-    "cmd": "make",
-    "repo": "ridecharge/confd-docker",
-    "branch": "master",
-    "downstreams": "nginx-docker,unicorn-docker"
-  },
-  "consul-docker": {
-    "cmd": "make",
-    "repo": "ridecharge/consul-docker",
-    "branch": "master"
-  },
-  "aws-startup-utils-docker": {
-    "cmd": "make",
-    "repo": "ridecharge/aws-startup-utils-docker",
-    "branch": "master"
-  },
-  "curbot-docker": {
-    "cmd": "make",
-    "repo": "ridecharge/curbot-docker",
-    "branch": "master"
-  },
-  "curbkins": {
-    "cmd": "make",
-    "repo": "ridecharge/curbkins",
-    "branch": "master"
-  },
-  "jenkins-docker": {
-    "cmd": "make",
-    "repo": "ridecharge/jenkins-docker",
-    "branch": "master",
-    "downstreams": "curbkins-docker"
-  },
-  "jenkins-slave-curbix": {
-    "cmd": "make",
-    "repo": "ridecharge/jenkins-slave-curbix",
-    "branch": "master"
-  },
-  "logging-docker": {
-    "cmd": "make",
-    "repo": "ridecharge/logging-docker",
-    "branch": "master"
-  },
-  "statsd-docker": {
-    "cmd": "make",
-    "repo": "ridecharge/statsd-docker",
-    "branch": "master"
   }
 }
