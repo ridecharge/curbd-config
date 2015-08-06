@@ -2,27 +2,38 @@
   "curbd-config-private-populate": {
     "cmd": [
       "ENVIRONMENT=$(curl http://consul.gocurb.internal/v1/kv/cf/config/environment?raw)",
+      "docker pull registry.gocurb.internal:80/curbd-config-private",
       "docker run --link consul:consul registry.gocurb.internal:80/curbd-config-private -e $ENVIRONMENT"
     ]
   },
   "curbd-config-populate": {
     "cmd": [
       "ENVIRONMENT=$(curl http://consul.gocurb.internal/v1/kv/cf/config/environment?raw)",
+      "docker pull registry.gocurb.internal:80/curbd-config",
       "docker run --link consul:consul registry.gocurb.internal:80/curbd-config -e $ENVIRONMENT"
     ]
   },
   "curbformation-templates-create": {
-    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates create -n $name -v $version",
+    "cmd": [
+	"docker pull registry.gocurb.internal:80/curbformation-templates",
+	"docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates create -n $name -v $version"
+    ],
     "parameters": "name,version",
     "blockOn": "curbformation-templates"
   },
   "curbformation-templates-deploy": {
-    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates deploy -n $name -v $version",
+    "cmd": [
+	"docker pull registry.gocurb.internal:80/curbformation-templates",
+	"docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates create -n $name -v $version"
+    ],
     "parameters": "name,version",
     "blockOn": "curbformation-templates"
   },
   "curbformation-templates-redeploy": {
-    "cmd": "docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates deploy -n $name",
+    "cmd": [
+	"docker pull registry.gocurb.internal:80/curbformation-templates",
+	"docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates create -n $name -v $version"
+    ],
     "parameters": "name",
     "blockOn": "curbformation-templates"
   },
