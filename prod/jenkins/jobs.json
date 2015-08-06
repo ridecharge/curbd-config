@@ -32,7 +32,7 @@
   "curbformation-templates-redeploy": {
     "cmd": [
 	"docker pull registry.gocurb.internal:80/curbformation-templates",
-	"docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates create -n $name -v $version"
+	"docker run --link consul:consul registry.gocurb.internal:80/curbformation-templates create -n $name"
     ],
     "parameters": "name",
     "blockOn": "curbformation-templates"
