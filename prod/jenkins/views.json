@@ -23,20 +23,5 @@
     "name": "Curbd Populate Jobs",
     "description": "These jobs manage configuration in consul.",
     "regex": "^curbd-.+-populate$"
-  },
-  "docker-containers": {
-    "name": "Docker Containers",
-    "description": "Docker container build jobs.",
-    "regex": "^.+-docker$"
-  },
-  "amazon-machine-images": {
-    "name": "Amazon Machine Images",
-    "description": "AMI build jobs.",
-    "regex": "^.+-curbix$"
-  },
-  "ansible-roles": {
-    "name": "Ansible Roles",
-    "description": "Ansible Roles for provisioning.",
-    "regex": "^.+-ansible-role$"
   }
 }
